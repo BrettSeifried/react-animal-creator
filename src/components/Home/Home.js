@@ -12,7 +12,7 @@ export default function Home() {
   const [headCount, setHeadCount] = useState(0);
   const [bodyCount, setBodyCount] = useState(0);
   const [legsCount, setLegsCount] = useState(0);
-  const [phraseCount, setPhraseList] = useState([]);
+  const [phraseList, setPhraseList] = useState([]);
 
   return (
     <main>
@@ -33,6 +33,7 @@ export default function Home() {
           bodyCount,
           setBodyCount,
           setPhraseList,
+          phraseList,
         }}
       />
       <Preview
@@ -52,13 +53,13 @@ export default function Home() {
           bodyCount,
           setBodyCount,
           setPhraseList,
+          phraseList,
         }}
       />
       {!!headCount && <p> You have changed heads {headCount} times.</p>}
       {!!bodyCount && <p> You have changed shirts {bodyCount} times.</p>}
       {!!legsCount && <p> You have changed pants {legsCount} times.</p>}
-      {!!phraseCount && <p> Your Name is {phraseCount}!</p>}
-      {!!phraseCount && <p> Your Name is {phraseCount}!</p>}
+      {!!phraseList && <p> Your Name is {phraseList}!</p>}
     </main>
   );
 }
