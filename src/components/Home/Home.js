@@ -9,6 +9,10 @@ export default function Home() {
   const [body, setBody] = useState('');
   const [legs, setLegs] = useState('');
   const [phrase, setPhrase] = useState('');
+  //   const [headCount, setHeadCount] = useState(0);
+  //   const [bodyCount, setBodyCount] = useState(0);
+  //   const [legsCount, setLegsCount] = useState(0);
+  //   const [phraseCount, setPhraseCount] = useState(0);
 
   return (
     <main>
