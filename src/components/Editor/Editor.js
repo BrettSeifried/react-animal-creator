@@ -2,12 +2,43 @@ import React from 'react';
 
 import './Editor.css';
 
-export default function Editor({ head, setHead, body, setBody, legs, setLegs, phrase, setPhrase }) {
-  const handleClick = () => {};
+export default function Editor({
+  head,
+  setHead,
+  body,
+  setBody,
+  legs,
+  setLegs,
+  phrase,
+  setPhrase,
+  setHeadCount,
+  setLegsCount,
+  setBodyCount,
+  setPhraseList,
+}) {
+  const handleHead = (e) => {
+    setHead(e.target.value);
+    setHeadCount((prevState) => prevState + 1);
+  };
+
+  const handleBody = (e) => {
+    setBody(e.target.value);
+    setBodyCount((prevState) => prevState + 1);
+  };
+  const handleLegs = (e) => {
+    setLegs(e.target.value);
+    setLegsCount((prevState) => prevState + 1);
+  };
+
+  const handleClick = () => {
+    setPhraseList((prevState) => [...prevState, phrase]);
+    setPhrase('');
+  };
+
   return (
     <div className="editor">
       <div className="form-control">
-        <select value={head} name="head" onInput={(e) => setHead(e.target.value)}>
+        <select value={head} name="head" onInput={handleHead}>
           <option value="">Select a Head</option>
           <option value="dog">Dog Head</option>
           <option value="bird">Bird Head</option>
@@ -16,7 +47,7 @@ export default function Editor({ head, setHead, body, setBody, legs, setLegs, ph
         </select>
       </div>
       <div className="form-control">
-        <select value={body} name="body" onInput={(e) => setBody(e.target.value)}>
+        <select value={body} name="body" onInput={handleBody}>
           <option value="">Select a Body</option>
           <option value="blue">Blue Shirt</option>
           <option value="dress">Pretty Dress</option>
@@ -25,7 +56,7 @@ export default function Editor({ head, setHead, body, setBody, legs, setLegs, ph
         </select>
       </div>
       <div className="form-control">
-        <select value={legs} name="legs" onInput={(e) => setLegs(e.target.value)}>
+        <select value={legs} name="legs" onInput={handleLegs}>
           <option value="">Select Pants</option>
           <option value="blue">Blue Pants</option>
           <option value="dog">Dog legs</option>
@@ -40,7 +71,7 @@ export default function Editor({ head, setHead, body, setBody, legs, setLegs, ph
           onInput={(e) => setPhrase(e.target.value)}
           placeholder="Write a Catch Phrase"
         />
-        <button onClick={(e) => setPhrase(e.target.value)}>Submit Phrase</button>
+        <button onClick={handleClick}>Submit Phrase</button>
       </div>
     </div>
   );
