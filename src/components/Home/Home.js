@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <main>
-      <Preview
+      <Editor
         {...{
           head,
           setHead,
@@ -28,7 +28,7 @@ export default function Home() {
           setPhrase,
         }}
       />
-      <Editor
+      <Preview
         {...{
           head,
           setHead,
