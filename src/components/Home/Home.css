@@ -1,4 +1,19 @@
 main {
   display: flex;
   justify-content: center;
+  background-size: cover;
+  align-items: center;
+}
+
+.results {
+  margin-left: 3vw;
+}
+
+.editor {
+  margin-right: 3vw;
+}
+
+.catchPhrase {
+  display: flex;
+  flex-direction: column;
 }

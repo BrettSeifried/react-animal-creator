@@ -3,6 +3,7 @@ import Preview from '../../components/Preview/Preview';
 import Editor from '../../components/Editor/Editor';
 import { useState } from 'react';
 import './Home.css';
+import bg from '../../background.png';
 
 export default function Home() {
   const [head, setHead] = useState('');
@@ -13,9 +14,10 @@ export default function Home() {
   const [bodyCount, setBodyCount] = useState(0);
   const [legsCount, setLegsCount] = useState(0);
   const [phraseList, setPhraseList] = useState([]);
+  // const [phraseCount, setPhraseCount] = useState(0);
 
   return (
-    <main>
+    <main style={{ backgroundImage: `url(${bg})` }}>
       <Editor
         {...{
           head,
@@ -34,6 +36,8 @@ export default function Home() {
           setBodyCount,
           setPhraseList,
           phraseList,
+          // phraseCount,
+          // setPhraseCount,
         }}
       />
       <Preview
@@ -54,12 +58,17 @@ export default function Home() {
           setBodyCount,
           setPhraseList,
           phraseList,
+          // phraseCount,
+          // setPhraseCount,
         }}
       />
-      {!!headCount && <p> You have changed heads {headCount} times.</p>}
-      {!!bodyCount && <p> You have changed shirts {bodyCount} times.</p>}
-      {!!legsCount && <p> You have changed pants {legsCount} times.</p>}
-      {!!phraseList && <p> Your Name is {phraseList}!</p>}
+      <div className="results">
+        {!!headCount && <p> You have changed heads {headCount} times.</p>}
+        {!!bodyCount && <p> You have changed shirts {bodyCount} times.</p>}
+        {!!legsCount && <p> You have changed pants {legsCount} times.</p>}
+        {!!phraseList && <p className="catchPhrase"> {phraseList}! </p>}
+        {/* {!!phraseCount && <p> You changed your name {phraseCount}!</p>} */}
+      </div>
     </main>
   );
 }

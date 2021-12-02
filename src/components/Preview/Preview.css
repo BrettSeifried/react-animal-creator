@@ -1,3 +1,7 @@
+main {
+  color: whitesmoke;
+  font-weight: bolder;
+}
 .character {
   display: flex;
   flex-direction: column;
@@ -5,6 +9,6 @@
 }
 
 img {
-  height: 200px;
+  height: 150px;
   width: auto;
 }
