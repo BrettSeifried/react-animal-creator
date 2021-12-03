@@ -15,8 +15,6 @@ export default function Editor({
   setLegsCount,
   setBodyCount,
   setPhraseList,
-  phraseCount,
-  setPhraseCount,
 }) {
   const handleHead = (e) => {
     setHead(e.target.value);

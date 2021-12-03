@@ -1,5 +1,332 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Ensuring Editor & Preview feed into Home.js 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="editor"
+      >
+        <div
+          class="form-control"
+        >
+          <select
+            name="head"
+          >
+            <option
+              value=""
+            >
+              Select a Head
+            </option>
+            <option
+              value="dog"
+            >
+              Dog Head
+            </option>
+            <option
+              value="bird"
+            >
+              Bird Head
+            </option>
+            <option
+              value="duck"
+            >
+              Duck Head
+            </option>
+            <option
+              value="horse"
+            >
+              Horse Head
+            </option>
+          </select>
+        </div>
+        <div
+          class="form-control"
+        >
+          <select
+            name="body"
+          >
+            <option
+              value=""
+            >
+              Select a Body
+            </option>
+            <option
+              value="blue"
+            >
+              Blue Shirt
+            </option>
+            <option
+              value="dress"
+            >
+              Pretty Dress
+            </option>
+            <option
+              value="pink"
+            >
+              Pink Top
+            </option>
+            <option
+              value="red"
+            >
+              Red Top
+            </option>
+          </select>
+        </div>
+        <div
+          class="form-control"
+        >
+          <select
+            name="legs"
+          >
+            <option
+              value=""
+            >
+              Select Pants
+            </option>
+            <option
+              value="blue"
+            >
+              Blue Pants
+            </option>
+            <option
+              value="dog"
+            >
+              Dog legs
+            </option>
+            <option
+              value="leg"
+            >
+              No Pants
+            </option>
+            <option
+              value="white"
+            >
+              White Pants
+            </option>
+          </select>
+        </div>
+        <div
+          class="form-control"
+        >
+          <input
+            placeholder="Write a Catch Phrase"
+            type="text"
+            value=""
+          />
+          <button>
+            Submit Phrase
+          </button>
+        </div>
+      </div>
+      <div
+        class="character"
+      >
+        <img
+          src="/assets/undefined-head.png"
+        />
+        <img
+          src="/assets/undefined-middle.png"
+        />
+        <img
+          src="/assets/undefined-pants.png"
+        />
+        <p>
+           
+           
+        </p>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="editor"
+    >
+      <div
+        class="form-control"
+      >
+        <select
+          name="head"
+        >
+          <option
+            value=""
+          >
+            Select a Head
+          </option>
+          <option
+            value="dog"
+          >
+            Dog Head
+          </option>
+          <option
+            value="bird"
+          >
+            Bird Head
+          </option>
+          <option
+            value="duck"
+          >
+            Duck Head
+          </option>
+          <option
+            value="horse"
+          >
+            Horse Head
+          </option>
+        </select>
+      </div>
+      <div
+        class="form-control"
+      >
+        <select
+          name="body"
+        >
+          <option
+            value=""
+          >
+            Select a Body
+          </option>
+          <option
+            value="blue"
+          >
+            Blue Shirt
+          </option>
+          <option
+            value="dress"
+          >
+            Pretty Dress
+          </option>
+          <option
+            value="pink"
+          >
+            Pink Top
+          </option>
+          <option
+            value="red"
+          >
+            Red Top
+          </option>
+        </select>
+      </div>
+      <div
+        class="form-control"
+      >
+        <select
+          name="legs"
+        >
+          <option
+            value=""
+          >
+            Select Pants
+          </option>
+          <option
+            value="blue"
+          >
+            Blue Pants
+          </option>
+          <option
+            value="dog"
+          >
+            Dog legs
+          </option>
+          <option
+            value="leg"
+          >
+            No Pants
+          </option>
+          <option
+            value="white"
+          >
+            White Pants
+          </option>
+        </select>
+      </div>
+      <div
+        class="form-control"
+      >
+        <input
+          placeholder="Write a Catch Phrase"
+          type="text"
+          value=""
+        />
+        <button>
+          Submit Phrase
+        </button>
+      </div>
+    </div>
+    <div
+      class="character"
+    >
+      <img
+        src="/assets/undefined-head.png"
+      />
+      <img
+        src="/assets/undefined-middle.png"
+      />
+      <img
+        src="/assets/undefined-pants.png"
+      />
+      <p>
+         
+         
+      </p>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
 exports[`input shows up 1`] = `
 Object {
   "asFragment": [Function],
