@@ -66,8 +66,14 @@ export default function Home() {
         {!!headCount && <p> You have changed heads {headCount} times.</p>}
         {!!bodyCount && <p> You have changed shirts {bodyCount} times.</p>}
         {!!legsCount && <p> You have changed pants {legsCount} times.</p>}
-        {!!phraseList && <p className="catchPhrase"> {phraseList}! </p>}
-        {/* {!!phraseCount && <p> You changed your name {phraseCount}!</p>} */}
+        {!!phraseList && (
+          <p>
+            Your Catch Phrases were:
+            {phraseList.map((elem) => (
+              <p key={elem}>{elem}</p>
+            ))}
+          </p>
+        )}
       </div>
     </main>
   );
