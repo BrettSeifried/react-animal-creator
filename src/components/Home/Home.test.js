@@ -3,7 +3,7 @@ import Home from './Home';
 import Editor from '../Editor/Editor';
 import Preview from '../Preview/Preview';
 
-test('input shows up', () => {
+test('Ensuring Editor & Preview feed into Home.js', () => {
   const container = render(
     <>
       <Editor />
