@@ -8,7 +8,6 @@ export default function Preview({ head, body, legs, phrase }) {
       <img alt={head} src={`${process.env.PUBLIC_URL}/assets/${head}-head.png`} />
       <img alt={body} src={`${process.env.PUBLIC_URL}/assets/${body}-middle.png`} />
       <img alt={legs} src={`${process.env.PUBLIC_URL}/assets/${legs}-pants.png`} />
-      <p> {phrase} </p>
     </div>
   );
 }
